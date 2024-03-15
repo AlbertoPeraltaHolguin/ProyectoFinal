@@ -57,7 +57,7 @@
 /* -------------------------------------------------------------------------------------------- Sobre nosotros ------------------- */
 
 /* Fondo solido, gris oscuro, de fondo */
-.us-background{
+.nosotros-background{
     display: flex;
     justify-content: center;
     background-color: #303841;
@@ -66,22 +66,22 @@
 }
 
 /* Fondo solido, gris claro, de fondo */
-.us-container{
+.nosotros-container{
     display: flex;
     background-color: #3a4750;
     width: 85%;
     height: 650px;
 }
 
-/* Especificaciones del contenedor */
-.us-txt-container{
+/* Especificaciones del texto en el contenedor */
+.txt-nosotros-container{
     width: 50%;
     height: 650px;
     padding: 60px;
 }
 
 /* Especificaciones del texto */
-.txt-us{
+.txt-nosotros{
     text-align: justify;
     font-size: 30px;
 }
@@ -89,7 +89,7 @@
 /* -------------------------------------------------------------------------------------------- Ubicacion ------------------- */
 
 /* CSS reutilizado de us, a excepcion de los botones para hacer reserva y ver menu */
-.ctr-zn{
+.contenedor-input-ubicacion{
     margin: 30px;
     padding: 15px;
     background-color: #be3144;
@@ -98,7 +98,7 @@
 }
 
 /* Y el titulo */
-.txt-zn{
+.txt-ubicacion{
     text-align: center;
     font-size: 35px;
 }
@@ -106,24 +106,32 @@
 /* -------------------------------------------------------------------------------------------- Especialidades ------------------- */
 
 /* Background de la seccion */
-.sp-container{
+.especialidades-background{
     background-color: #d3d6db;
     width: 100%;
     height: 650px;
 }
 
 /* Especificaciones en la font del titulo */
-.sp-tit{
+.especialidades-titulo{
     text-align: center;
     font-size: 50px;
     color: #000000;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
+}
+
+/* Especificaciones en la font del titulo + aumento de padding por el nav */
+.especialidades-titulo-principal{
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    padding: 100px 50px 0 50px;
 }
 
 /* -------------------------------------------------------------------------------------------- Reservaciones ------------------- */
 
 /* Fondo trasero, gris oscuro, del html */
-.res-background{
+.reservaciones-background{
     display: flex;
     justify-content: center;
     background-color: #303841;
@@ -132,7 +140,7 @@
 }
 
 /* Fondo superior, gris claro, del html */
-.res-container{
+.reservaciones-container{
     background-color: #d3d6db;
     width: 70%;
     height: 730px;
@@ -140,18 +148,35 @@
 
 /* Especificaciones para la font del titulo, con mayor padding al ser la primera y, por consiguiente,  tener el nav */
 
-.res-tit{
+.reservaciones-titulos{
     text-align: center;
     font-size: 50px;
     color: #000000;
 }
 
 /* El resto de titulos reutilizan el css "sp-tit" de especialidades */
-
-.res-txt{
+.txt-reservaciones{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: #000000;
+    padding: 15px;
+}
+
+/* Especificaciones en los input para crear reservaciones */
+.tamaño-input-reservaciones{
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+}
+
+.contenedor-input-reservaciones{
+    text-align: center;
+    margin: 30px;
+    padding: 15px;
+    width: 300px;
+    background-color: #be3144;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* -------------------------------------------------------------------------------------------- Extras ------------------- */
