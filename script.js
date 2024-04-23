@@ -1,4 +1,15 @@
-console.log("el Script funciona")
+
+/* ------------------- ESPECIFICACIONES:
+> 'Math.random' genera un decimal aleatorio entre 0 y 1
+> 'Math.floor' convierte en entero el numero anterior */
+function numeroAleatorio(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+console.log(numeroAleatorio(10000,99999)); /* minimo y maximo para generar numeros de 5 digitos*/
+
+/* Libreria SweetAlert */
+
 
 /**
  * SLIDER DE SECCIÓN DESTACADA
