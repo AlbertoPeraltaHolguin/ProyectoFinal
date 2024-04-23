@@ -9,86 +9,87 @@
 </head>
 
 <body>
-    <div class="reservaciones-background">
-        <nav class="nav-container">
-            <a href="index.html" class="elemento-nav">
-                Regresar
-            </a>
-
-            <a href="#" class="elemento-nav">
-                Menú
-            </a>
-        </nav>
-
-        <div class="reservaciones-container"> <!------------------------------------------------------------------------ ¿Tienes reservacion? -->
-            <p class="especialidades-titulo-principal">
-                ¿Ya tienes reservacion?
-            </p>
-
-            <br>
-
-            <p class="txt-reservaciones">
-                Nombre:
-                
-                <br>
-
-                <input class="tamaño-input-reservaciones" placeholder=" Nombre completo">
-            </p>
-
-            <p class="txt-reservaciones">
-                Folio de reservacion:
-                
-                <br>
-
-                <input class="tamaño-input-reservaciones" placeholder=" 7d6tucybhou">
-            </p>
-
-            <p class="contenedor-input-reservaciones"  >
-                <a href="#">
-                    INGRESAR
-                </a>
-            </p>
-        </div>
-    </div>
-
-    <div class="sep"></div> 
-
-    <div class="reservaciones-background">
-        <div class="reservaciones-container"> <!------------------------------------------------------------------------ Crear reservacion -->
-            <p class="especialidades-titulo">
-                Crear reservación:
-            </p>
-        </div>
-    </div>
-
-    <div class="sep"></div> 
-
-    <div class="reservaciones-background"> 
-        <div class="reservaciones-container"> <!------------------------------------------------------------------------ Informacion de pago -->
-            <p class="especialidades-titulo">
-                Información de pago:
-            </p>
-        </div>
-    </div>
-
-    <div class="sep"></div> 
-
-    <div class="reservaciones-background">
-        <div class="reservaciones-container"> <!------------------------------------------------------------------------ Agradecimiento -->
-            <p class="especialidades-titulo">
-                Gracias por su preferencia
-            </p>
-        </div>
-    </div>
-
-    <section class="footer">
+    <div class="reservaciones-contenedor">
         <div>
-            <p>
-                Inserta un footer no tan genérico.
-            </p>
-        </div>
-    </section>
 
+            <!-- Encabezados -->
+            <h1 class="style-reservaciones">Crear reservacion</h1>
+            <h1 class="style-reservaciones">Ingrese los datos indicados a continuación para agendar una mesa:</h1>
+        
+        </div>
+        <br>
+        <div class="inputs-config">
+            
+            <!-- Inputs de nombre y numero telefonico -->
+            <input type="text" placeholder="Nombre" class="inputs-config-more" id="nombre">
+            <input type="text" placeholder="Numero telefonico" class="inputs-config-more" id="numero">
+        
+        </div>
+        <br>
+        <div class="inputs-config">
+            
+            <!-- Menu de cuantas personas en la reservacion -->
+            <select name="person" class="inputs-config-part1" id="personas" required>
+                <option value="1-person" class="inputs-config-more">1 Persona</option>
+                <option value="2-person" class="inputs-config-more">2 Personas</option>
+                <option value="3-person" class="inputs-config-more">3 Personas</option>
+                <option value="4-person" class="inputs-config-more">4 Personas</option>
+                <option value="5-person" class="inputs-config-more">5 Personas</option>
+                <option value="6-person" class="inputs-config-more">6 Personas</option>
+                <option value="7-person" class="inputs-config-more">7 Personas</option>
+            </select>
+            
+            <!-- Fecha de reservacion -->
+            <input type="date" name="reservation-date" class="inputs-config-more" id="fecha" required>
+            
+            <!-- Menu del horario -->
+            <select name="person"  class="inputs-config-part1" id="horario" required>
+                <option value="08:00am" class="inputs-config-more">08 : 00 am</option>
+                <option value="09:00am" class="inputs-config-more">09 : 00 am</option>
+                <option value="010:00am" class="inputs-config-more">10 : 00 am</option>
+                <option value="011:00am" class="inputs-config-more">11 : 00 am</option>
+                <option value="012:00am" class="inputs-config-more">12 : 00 am</option>
+                <option value="01:00pm" class="inputs-config-more">01 : 00 pm</option>
+                <option value="02:00pm" class="inputs-config-more">02 : 00 pm</option>
+                <option value="03:00pm" class="inputs-config-more">03 : 00 pm</option>
+                <option value="04:00pm" class="inputs-config-more">04 : 00 pm</option>
+                <option value="05:00pm" class="inputs-config-more">05 : 00 pm</option>
+                <option value="06:00pm" class="inputs-config-more">06 : 00 pm</option>
+                <option value="07:00pm" class="inputs-config-more">07 : 00 pm</option>
+                <option value="08:00pm" class="inputs-config-more">08 : 00 pm</option>
+                <option value="09:00pm" class="inputs-config-more">09 : 00 pm</option>
+                <option value="10:00pm" class="inputs-config-more">10 : 00 pm</option>
+            </select>
+        </div>
+        <br>
+        <div class="inputs-config">
+
+            <!-- Notas extras -->
+            <textarea name="message" placeholder="Comentarios" class="inputs-config-more"></textarea>
+        
+        </div>
+        <br>
+        <div class="inputs-config">
+            <div>
+
+                <!-- Boton de ingresar -->
+                <button class="inputs-config-more" id="confirmacion" onclick="reservaciones()">Confirmación</button> <!-- 'onclick' invoca a la funcion 'reservaciones' cuando es presionado -->
+            
+            </div>
+        </div>
+        <br>
+        <div class="inputs-config">
+            
+            <h1 id="leyenda" class="folio-txt-black">
+
+            <h1 id="folio" class="folio-txt-red"></h1>
+        </div>
+    </div>
+
+
+    <!-- Importacion de la libreria SweetAlert y Javascript -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

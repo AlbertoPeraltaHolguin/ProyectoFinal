@@ -253,24 +253,45 @@
 
 /* -------------------------------------------------------------------------------------------- Reservaciones ------------------- */
 
-/* Fondo trasero, gris oscuro, del html */
-.reservaciones-background{
-    display: flex;
-    justify-content: center;
-    background-color: #303841;
-    width: 100%;
-    height: 730px;
+.style-reservaciones{
+  color: #000000;
+  text-align: center;
 }
 
-/* Fondo superior, gris claro, del html */
-.reservaciones-container{
-    background-color: #d3d6db;
-    width: 70%;
-    height: 730px;
+.inputs-config{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #000000;
 }
+
+.inputs-config-part1{
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+.inputs-config-more{
+  margin:0 85px 0 85px;
+  color: #000000;
+}
+
+.button-config{
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+.folio-txt-red{
+  color: #be3144;
+}
+
+.folio-txt-black{
+  color: #000000;
+}
+
 
 /* Especificaciones para la font del titulo, con mayor padding al ser la primera y, por consiguiente,  tener el nav */
-
 .reservaciones-titulos{
     text-align: center;
     font-size: 50px;
