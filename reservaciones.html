@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tinto > Reservaciones</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="reservaciones-contenedor">
+        <div class="form">
+            <div class="center">
+                <div>
+                    <p class="style-reservaciones">Crear reservacion</p>
+                    <p class="style-reservaciones">Ingrese los datos indicados a continuación para agendar una mesa:</p>
+                </div>
+                <br>
+                <div class="inputs-config">
+                    <p class="style-reservaciones">Nombre</p>
+                    <input type="text" placeholder="Nombre" class="inputs-config-part1">
+                </div>
+                <br>
+                <div class="inputs-config">
+                    <p class="style-reservaciones">Cantidad de Personas</p>
+                    <select name="person" class="inputs-config-part1">
+                        <option value="1-person" class="inputs-config-more">1 Persona</option>
+                        <option value="2-person" class="inputs-config-more">2 Personas</option>
+                        <option value="3-person" class="inputs-config-more">3 Personas</option>
+                        <option value="4-person" class="inputs-config-more">4 Personas</option>
+                        <option value="5-person" class="inputs-config-more">5 Personas</option>
+                        <option value="6-person" class="inputs-config-more">6 Personas</option>
+                        <option value="7-person" class="inputs-config-more">7 Personas</option>
+                    </select>
+                    <p class="style-reservaciones">Fecha de Reservacion</p>
+                    <input type="date" name="reservation-date" class="inputs-config-part1">
+                    <p class="style-reservaciones">Hora</p>
+                    <select name="person"  class="inputs-config-part1">
+                        <option value="08:00am" class="inputs-config-more">08 : 00 am</option>
+                        <option value="09:00am" class="inputs-config-more">09 : 00 am</option>
+                        <option value="010:00am" class="inputs-config-more">10 : 00 am</option>
+                        <option value="011:00am" class="inputs-config-more">11 : 00 am</option>
+                        <option value="012:00am" class="inputs-config-more">12 : 00 am</option>
+                        <option value="01:00pm" class="inputs-config-more">01 : 00 pm</option>
+                        <option value="02:00pm" class="inputs-config-more">02 : 00 pm</option>
+                        <option value="03:00pm" class="inputs-config-more">03 : 00 pm</option>
+                        <option value="04:00pm" class="inputs-config-more">04 : 00 pm</option>
+                        <option value="05:00pm" class="inputs-config-more">05 : 00 pm</option>
+                        <option value="06:00pm" class="inputs-config-more">06 : 00 pm</option>
+                        <option value="07:00pm" class="inputs-config-more">07 : 00 pm</option>
+                        <option value="08:00pm" class="inputs-config-more">08 : 00 pm</option>
+                        <option value="09:00pm" class="inputs-config-more">09 : 00 pm</option>
+                        <option value="10:00pm" class="inputs-config-more">10 : 00 pm</option>
+                    </select>
+                </div>
+                <br>
+                <div class="inputs-config">
+                    <p class="style-reservaciones">Notas adicionales</p>
+                    <textarea name="message" placeholder="Message" class="inputs-config-part1"></textarea>
+                </div>
+            </div>
+        </div> 
+        <div class="inputs-config">
+            <div>
+
+                <!-- Boton de ingresar -->
+                <button class="inputs-config-more" id="confirmacion" onclick="reservaciones()">Confirmación</button> <!-- 'onclick' invoca a la funcion 'reservaciones' cuando es presionado -->
+            
+            </div>
+        </div>
+        <br>
+        <div class="inputs-config">
+            
+            <h1 id="leyenda" class="folio-txt-black">
+
+            <h1 id="folio" class="folio-txt-red"></h1>
+        </div>
+    </div>
+
+
+    <!-- Importacion de la libreria SweetAlert y Javascript -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

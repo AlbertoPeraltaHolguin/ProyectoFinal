@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap'); /* Importacion de la fon Kiwi Maru */
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap'); /* Importacion de la fon Koh Santepheap */
+
+*{
+    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Kiwi Maru", serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------------------------- Index ------------------- */
+
+/* Fondo */
+.background{
+    width: 100%;
+    height: 730px;
+    background-image: url(../img/wall.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Contenedor del nav principal */
+.nav-container{
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+    background-color:  var(--smoky-black-1);
+    width: 100%;
+    height: 70px;
+}
+
+/* Especificaciones en el texto del nav */
+.elemento-nav{
+    margin: 0 60px;
+    font-size: 25px;
+}
+/*-----------------------------------*\
+  #SECCION_DESTACADA
+\*-----------------------------------*/
+
+.seccion-destacada .slider-btn { display: none; }
+
+.seccion-destacada {
+  position: relative;
+  padding-block: 120px;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.seccion-destacada .slider-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  padding-block-start: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-3);
+  z-index: 1;
+}
+
+.seccion-destacada .slider-item.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.seccion-destacada .slider-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+.seccion-destacada .slider-item.active .slider-bg {
+  animation: smoothScale 7s linear forwards;
+}
+
+@keyframes smoothScale {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.seccion-destacada .section-subtitle::after { margin-block: 14px 20px; }
+
+.destacada-texto { margin-block: 10px 40px; }
+
+.seccion-destacada .btn { margin-inline: auto; }
+
+.destacada-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  background-color: var(--gold-crayola);
+  width: 110px;
+  height: 110px;
+  padding: 12px;
+  transform: scale(0.6);
+}
+
+.destacada-btn img {
+  margin-inline: auto;
+  margin-block-end: 6px;
+}
+
+.destacada-btn .span {
+  color: var(--black);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-1);
+  line-height: var(--lineHeight-3);
+}
+
+.destacada-btn::after {
+  inset: 0;
+  border: 1px solid var(--gold-crayola);
+  animation: rotate360 15s linear infinite;
+}
+
+.slider-reveal {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.seccion-destacada .slider-item.active .slider-reveal {
+  animation: sliderReveal 1s ease forwards;
+}
+
+@keyframes sliderReveal {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.seccion-destacada .slider-item.active .section-subtitle { animation-delay: 500ms; }
+
+.seccion-destacada .slider-item.active .destacada-title { animation-delay: 1000ms; }
+
+.seccion-destacada .slider-item.active .destacada-texto { animation-delay: 1.5s; }
+
+.seccion-destacada .slider-item.active .btn { animation-delay: 2s; }
+
+
+/* Especificaciones en el texto del eslogan */
+.eslogan{
+    display: flex;
+    text-align: left;
+    padding: 100px 50px;
+    font-size: 110px;
+    font-family: "Koh Santepheap", serif;
+    font-weight: 650;
+    font-style: normal;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+/* -------------------------------------------------------------------------------------------- Sobre nosotros ------------------- */
+
+/* Fondo solido, gris oscuro, de fondo */
+.nosotros-background{
+    display: flex;
+    justify-content: center;
+    background-color: #303841;
+    width: 100%;
+    height: 650px;
+}
+
+/* Fondo solido, gris claro, de fondo */
+.nosotros-container{
+    display: flex;
+    background-color: #3a4750;
+    width: 85%;
+    height: 650px;
+}
+
+/* Especificaciones del texto en el contenedor */
+.txt-nosotros-container{
+    width: 50%;
+    height: 650px;
+    padding: 60px;
+}
+
+/* Especificaciones del texto */
+.txt-nosotros{
+    text-align: justify;
+    font-size: 30px;
+}
+
+/* -------------------------------------------------------------------------------------------- Ubicacion ------------------- */
+
+/* CSS reutilizado de us, a excepcion de los botones para hacer reserva y ver menu */
+.contenedor-input-ubicacion{
+    margin: 30px;
+    padding: 15px;
+    background-color: #be3144;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Y el titulo */
+.txt-ubicacion{
+    text-align: center;
+    font-size: 35px;
+}
+
+/* -------------------------------------------------------------------------------------------- Especialidades ------------------- */
+
+/* Background de la seccion */
+.especialidades-background{
+    background-color: #d3d6db;
+    width: 100%;
+    height: 650px;
+}
+
+/* Especificaciones en la font del titulo */
+.especialidades-titulo{
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    padding: 50px 50px 0 50px;
+}
+
+/* Especificaciones en la font del titulo + aumento de padding por el nav */
+.especialidades-titulo-principal{
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    padding: 100px 50px 0 50px;
+}
+
+/* -------------------------------------------------------------------------------------------- Reservaciones ------------------- */
+.reservaciones-contenedor{
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: rgba(192, 24, 24, 0.7);
+  border-radius: 10px;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.style-reservaciones{
+  font-size: 20px;
+}
+
+.inputs-config{
+  justify-content: center;
+  width: 100%;
+}
+
+.inputs-config-part1{
+  color: #000000;
+}
+
+.button-config{
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+.folio-txt-red{
+  color: #be3144;
+}
+
+.folio-txt-black{
+  color: #000000;
+}
+/* Especificaciones para la font del titulo, con mayor padding al ser la primera y, por consiguiente,  tener el nav */
+.reservaciones-titulos{
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+}
+
+/* El resto de titulos reutilizan el css "sp-tit" de especialidades */
+.txt-reservaciones{
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    padding: 15px;
+}
+
+/* Especificaciones en los input para crear reservaciones */
+.tamaño-input-reservaciones{
+    width: 400px;
+    height: 50px;
+    margin: 10px;
+}
+
+.contenedor-input-reservaciones{
+    text-align: center;
+    margin: 30px;
+    padding: 15px;
+    width: 300px;
+    background-color: #be3144;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------- Extras ------------------- */
+
+/* Separador entre secciones */
+.sep{
+    background-color:  #000000;
+    width: 100%;
+    height: 60px;
+}
+
+/* Contenedor final */
+.footer{
+    background-color:  #be3144;
+    width: 100%;
+    height: 50px;
+}
