@@ -289,6 +289,19 @@
   color: #000000;
 }
 
+.button-config{
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+.folio-txt-red{
+  color: #be3144;
+}
+
+.folio-txt-black{
+  color: #000000;
+}
 /* Especificaciones para la font del titulo, con mayor padding al ser la primera y, por consiguiente,  tener el nav */
 .reservaciones-titulos{
     text-align: center;

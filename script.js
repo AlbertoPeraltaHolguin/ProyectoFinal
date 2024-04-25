@@ -1,10 +1,87 @@
-console.log("el Script funciona")
+
+
+/*  ---------------------------------------------------------------------------------------------------------------------------------- FOLIO DE RESERVACIONES ---------
+------------------------ ESPECIFICACIONES:
+> 'Math.random' genera un decimal aleatorio entre 0 y 1
+> 'Math.floor' convierte en entero el numero anterior */
+function numeroAleatorio(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+document.getElementById('confirmacion').addEventListener('click',function(){
+  const leyenda = document.getElementById('leyenda'); /* -- ubicar al h1 que contendra la leyenda por medio de una variable --*/
+  leyenda.textContent = 'Su folio de reservación es:'; /* -- asignarle el texto a la variable anterior para que se muestre en pantalla al hacer click --*/
+
+  /* -- Mismo proceso, pero, en vez de enviar un texto, invocamos a la funcion que nos dará el folio -- */
+  const folio = document.getElementById('folio'); 
+  folio.textContent = numeroAleatorio(10000,99999); /* los parametros son el minimo y maximo para generar un numero de 5 digitos*/
+});
+
+
+
+/*  ---------------------------------------------------------------------------------------------------------------------------------- VALIDACIONES ---------*/
+
+function reservaciones() {
+  let user = document.getElementById("nombre").value;
+  let number = document.getElementById("numero").value;
+
+  if(user == "" || number == ""){
+      swal('¡Ha ocurrido un error!', 'No se admiten espacios en blanco.', 'error');  /* Validar que no estén vacios los input */
+  } else if(number.length !== 10){
+    swal('¡Información incompleta!', 'Verifique la longitud del número.', 'warning'); /* Validar la longitud del telefono */
+  } else {
+    swal('¡Operación exitosa!', 'Guarde su comprobante, el no. de folio.', 'success');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * SLIDER DE SECCIÓN DESTACADA
- */
-
-const seccionDestacadaSlider = document.querySelector("[data-seccion-destacada-slider]");
+ * 
+ * const seccionDestacadaSlider = document.querySelector("[data-seccion-destacada-slider]");
 const seccionDestacadaSliderItems = document.querySelectorAll("[data-seccion-destacada-slider-item]");
 const seccionDestacadaSliderPrevBtn = document.querySelector("[data-prev-btn]");
 const seccionDestacadaSliderNextBtn = document.querySelector("[data-next-btn]");
@@ -44,7 +121,6 @@ seccionDestacadaSliderPrevBtn.addEventListener("click", slidePrev);
 
 /**
  * Automatización del deslizamiento
- */
 
 let autoSlideInterval;
 
@@ -64,3 +140,6 @@ const stopAutoSlide = function () {
 });
 
 window.addEventListener("load", autoSlide);
+
+ */
+
