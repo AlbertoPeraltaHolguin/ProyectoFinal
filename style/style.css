@@ -308,11 +308,11 @@
 }
 
 .folio-txt-red{
-  color: #000000;
+  color: #ff0000;
 }
 
 .folio-txt-black{
-  color: #000000;
+  color: #fd0000;
 }
 /* Especificaciones para la font del titulo, con mayor padding al ser la primera y, por consiguiente,  tener el nav */
 .reservaciones-titulos{
