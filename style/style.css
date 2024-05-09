@@ -138,7 +138,7 @@
 /*SECCION  DEL MENU */
 .menu-container{
   width: 100%;
-  height: 1000px;
+  height: 500px;
   background-color: rgb(14, 68, 85);  
   flex-direction: column;  
 
@@ -155,7 +155,7 @@ flex-direction: row;
 .info-container{
   background-color: #ffffff;
   width: 100%;
-  height: 50%;
+  height: 100%;
   border: 2px black solid;
   display: flex;
 align-items: center;
@@ -165,7 +165,7 @@ align-items: center;
 
 .img-platillos{
   width: 100%;
-  height: 80%;
+  height: 70%;
 
 }
 .info-platillos-container{
