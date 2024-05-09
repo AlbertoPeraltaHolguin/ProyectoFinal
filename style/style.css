@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap'); /* Importacion de la fon Koh Santepheap */
 
 *{
-    --smoky-black-1: hsla(40, 12%, 5%, 1);
+    --smoky-black-1: rgb(44, 43, 41);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,14 +12,32 @@
     font-size: 25px;
     letter-spacing: 2px;
 }
+/* Separador entre secciones */
+.sep{
+  background-color: #fdfdfd ;
+  width: 100%;
+  height: 20px;
+}
 
 /* -------------------------------------------------------------------------------------------- Index ------------------- */
+
+/* Secciion de slogan */
+.slogan{
+  position: relative;
+  left: 10px;
+  top: 30px;
+  background-color: #0addaf;
+  width: 500px;
+  height: 500px;
+}
+
 
 /* Fondo */
 .background{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/wall.jpg);
+  color: aliceblue;
+  background-image: url(https://i.pinimg.com/564x/e5/04/45/e50445d1486d2fa151b3f447f4da69e2.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -27,149 +45,24 @@
 /* Contenedor del nav principal */
 .nav-container{
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-around;
     padding: 15px;
     background-color: transparent;
     width: 100%;
     height: 70px;
-    color: aliceblue;
+    color: #ffffff ;
 }
 
 /* Especificaciones en el texto del nav */
 .elemento-nav{
     margin: 0 60px;
-    font-size: 25px;
-    color: aliceblue;
-}
-/*-----------------------------------*\
-  #SECCION_DESTACADA
-\*-----------------------------------*/
-
-.seccion-destacada .slider-btn { display: none; }
-
-.seccion-destacada {
-  position: relative;
-  padding-block: 390px;
-  min-height: 100%;
-  overflow: hidden;
-  z-index: 1;
-  color: aliceblue;
+    font-size: 20px;
+    color: #be3144 ;
 }
 
-.seccion-destacada .slider-item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-content: center;
-  padding-block-start: 100px;
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-3);
-  z-index: 1;
-}
-
-.seccion-destacada .slider-item.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.seccion-destacada .slider-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(1.15);
-  pointer-events: none;
-  user-select: none;
-  z-index: -1;
-}
-
-.seccion-destacada .slider-item.active .slider-bg {
-  animation: smoothScale 7s linear forwards;
-}
-
-@keyframes smoothScale {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.15); }
-}
-
-.seccion-destacada .section-subtitle::after { margin-block: 14px 20px; }
-
-.destacada-texto { margin-block: 10px 40px; }
-
-.seccion-destacada .btn { margin-inline: auto; }
-
-.destacada-btn {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  z-index: 2;
-  background-color: var(--gold-crayola);
-  width: 110px;
-  height: 110px;
-  padding: 12px;
-  transform: scale(0.6);
-}
-
-.destacada-btn img {
-  margin-inline: auto;
-  margin-block-end: 6px;
-}
-
-.destacada-btn .span {
-  color: var(--black);
-  font-weight: var(--weight-bold);
-  text-transform: uppercase;
-  letter-spacing: var(--letterSpacing-1);
-  line-height: var(--lineHeight-3);
-}
-
-.destacada-btn::after {
-  inset: 0;
-  border: 1px solid var(--gold-crayola);
-  animation: rotate360 15s linear infinite;
-}
-
-.slider-reveal {
-  transform: translateY(30px);
-  opacity: 0;
-}
-
-.seccion-destacada .slider-item.active .slider-reveal {
-  animation: sliderReveal 1s ease forwards;
-}
-
-@keyframes sliderReveal {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.seccion-destacada .slider-item.active .section-subtitle { animation-delay: 500ms; }
-
-.seccion-destacada .slider-item.active .destacada-title { animation-delay: 1000ms; }
-
-.seccion-destacada .slider-item.active .destacada-texto { animation-delay: 1.5s; }
-
-.seccion-destacada .slider-item.active .btn { animation-delay: 2s; }
 
 
 
-
-
-
-/* -------------------------------------------------------------------------------------------- Ubicacion ------------------- */
 
 /* CSS reutilizado de us, a excepcion de los botones para hacer reserva y ver menu */
 .contenedor-input-ubicacion{
@@ -221,26 +114,16 @@
 
 
 
-/* -------------------------------------------------------------------------------------------- Especialidades ------------------- */
+/* ------------------------------------------- Especialidades and menu ------------------- */
 
 /* Background de la seccion */
 
-
-
-
-
-.especialidades-background{
-    background-color: #000000;
-    width: 100%;
-    height: 650px;
-    border: 4px solid #efb810 
-}
 
 /* Especificaciones en la font del titulo */
 .especialidades-titulo{
     text-align: center;
     font-size: 50px;
-    color: #ffffff;
+    color: #000000;
     padding: 50px 50px 0 50px;
 }
 
@@ -248,9 +131,52 @@
 .especialidades-titulo-principal{
     text-align: center;
     font-size: 50px;
-    color: #000000;
+    color: #ff0000;
     padding: 100px 50px 0 50px;
 }
+
+/*SECCION  DEL MENU */
+.menu-container{
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(14, 68, 85);  
+  flex-direction: column;  
+
+}
+.product-container{
+  background-color: #be3144;
+  width: 100%;
+  height: 100%;
+display: flex;
+flex-direction: row;
+
+}
+
+.info-container{
+  background-color: #ffffff;
+  width: 100%;
+  height: 50%;
+  border: 2px black solid;
+  display: flex;
+align-items: center;
+  flex-direction:column;
+  color: #000000;
+}
+
+.img-platillos{
+  width: 100%;
+  height: 80%;
+
+}
+.info-platillos-container{
+  width: 70%;
+  size: 20px;
+text-align: center;
+text-size-adjust: 4px;
+}
+
+
+
 
 /* -------------------------------------------------------------------------------------------- Reservaciones ------------------- */
 .reservaciones-contenedor{
@@ -347,12 +273,7 @@
 }
 
 /* -------------------------------------------------------------------------------------------- Extras ------------------- */
-/* Separador entre secciones */
-.sep{
-  background-color: #efb810 ;
-  width: 100%;
-  height: 5px;
-}
+
 
 /* Contenedor final */
 .footer{
@@ -434,48 +355,3 @@ text-align: left;
 }
 
 
-/*SECCION  DEL MENU */
-  .menu-container{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 81%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    
-
-  }
-  .product-container{
-    background-color: #be3144;
-    width: 30%;
-    height: 99%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .info-container{
-    background-color: #ffffff;
-    width: 100%;
-    height: 33%;
-    border: 2px black solid;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    color: #000000;
-  }
-
-  .img-platillos{
-    width: 30%;
-    height: 90%;
-    position:relative;
-    top: 10px;
-    left: 10px;
-  }
-  .info-platillos-container{
-    width: 70%;
-    size: 20px;
-  text-align: center;
-  }
