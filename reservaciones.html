@@ -9,7 +9,31 @@
 </head>
 
 <body>
-    <div class="reservaciones-contenedor">
+
+ 
+    <div class="background"> <!----------------------------- NavBar -->
+        <nav class="nav-container">
+
+          <a href="menu.html" class="elemento-nav">
+            Vinos
+            </a>
+
+            <a href="menu.html" class="elemento-nav">
+                Conocenos
+            </a>
+  
+            <img src="img/Latinto.png" height="150px">
+
+            <a href="menu.html" class="elemento-nav">
+              Adomicilio
+            </a>            
+               <a href="reservaciones.html" class="elemento-nav">
+              Reservaciones
+            </a>   
+
+
+
+    <div class="reservaciones-contenedor" >
         <div class="form">
             <div class="center">
                 <div>
@@ -58,29 +82,62 @@
                     <p class="style-reservaciones">Notas adicionales</p>
                     <textarea name="message" placeholder="Message" class="inputs-config-part1"></textarea>
                 </div>
+                <button type="submit" class="btn-reservaciones class="inputs-config-more" id="confirmacion" onclick="reservaciones()">
+                    <span class="text text-1">Reservar Mesa</span>
+                  </button>
+            </div>
+            <div class="inputs-config">
+            
+                <h1 id="leyenda" class="folio-txt-black">
+    
+                <h1 id="folio" class="folio-txt-red"></h1>
             </div>
         </div> 
-        <div class="inputs-config">
-            <div>
+        <div class="reservaciones-izquierda" style="background-image: url('./assets/images/form-pattern.png')">
 
-                <!-- Boton de ingresar -->
-                <button class="inputs-config-more" id="confirmacion" onclick="reservaciones()">Confirmación</button> <!-- 'onclick' invoca a la funcion 'reservaciones' cuando es presionado -->
-            
-            </div>
+
+            <p class="reservaciones-izquierda-h2">Contactanos</p>
+
+            <a href="tel:+88123123456" class="reservaciones-izquierda-telefono">+52-662-3291649</a>
+
+            <div class="separator"></div>
+
+            <p class="reservaciones-izquierda-h2">Ubicacion</p>
+
+            <address class="texto">
+                Blvd. Fco. Eusebio Kino s/n, Los Igualados,  <br>
+                83010 Hermosillo, Son.
+            </address>
+
+            <p class="reservaciones-izquierda-h2">Almuerzo</p>
+
+            <p class="texto">
+              Lunes a Domingo  <br>
+              11.00 am - 2.30pm
+            </p>
+
+            <p class="reservaciones-izquierda-h2">Cena</p>
+
+            <p class="texto">
+                Lunes a Domingo <br>
+              05.00 pm - 10.00pm
+            </p>
+
+          </div>
         </div>
         <br>
-        <div class="inputs-config">
-            
-            <h1 id="leyenda" class="folio-txt-black">
-
-            <h1 id="folio" class="folio-txt-red"></h1>
-        </div>
+        
     </div>
 
 
     <!-- Importacion de la libreria SweetAlert y Javascript -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="script.js"></script>
+     <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
