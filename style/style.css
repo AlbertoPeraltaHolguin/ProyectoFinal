@@ -192,7 +192,7 @@ text-size-adjust: 4px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  background-color:#f1b963;
+  background-color:#5a1a1a;
   border-radius: 10px;
   
 }
@@ -234,11 +234,12 @@ text-size-adjust: 4px;
 }
 
 .folio-txt-red{
-  color: #ff0000;
+  color: #ffffff;
+  
 }
 
 .folio-txt-black{
-  color: #fd0000;
+  color: #ffffffca;
 }
 /* Especificaciones para la font del titulo, con mayor padding al ser la primera y, por consiguiente,  tener el nav */
 .reservaciones-titulos{
@@ -262,15 +263,50 @@ text-size-adjust: 4px;
     margin: 10px;
 }
 
-.contenedor-input-reservaciones{
-    text-align: center;
-    margin: 30px;
-    padding: 15px;
-    width: 300px;
-    background-color: #be3144;
-    text-align: center;
-    cursor: pointer;
+.contenedor-input-reservaciones {
+  text-align: center; /* El texto dentro del contenedor estará centrado horizontalmente */
+  margin: 30px; /* Margen exterior de 30px alrededor del contenedor */
+  padding: 15px; /* Relleno interno de 15px dentro del contenedor */
+  width: 300px; /* Ancho del contenedor */
+  background-color: #be3144; /* Color de fondo del contenedor */
+  text-align: center; /* Texto dentro del contenedor estará centrado horizontalmente */
+  cursor: pointer; /* El cursor cambiará a un puntero al pasar sobre el contenedor */
 }
+
+.btn-reservaciones {
+  background-color: rgba(229, 226, 142, 0.782); /* Color de fondo del botón */
+  color: black; /* Color del texto del botón */
+  position: relative; /* Posición relativa para alinear elementos secundarios */
+  text-transform: uppercase; /* Transforma el texto a mayúsculas */
+  max-width: max-content; /* El ancho máximo será el tamaño del contenido */
+  border: 2px solid rgba(0, 0, 0, 0.519); /* Borde de 2px sólido con color semi-transparente */
+  padding: 12px 45px; /* Relleno de 12px arriba y abajo, 45px a la izquierda y derecha */
+}
+
+.reservaciones-izquierda .texto {
+  color: #c6e779; /* Color del texto dentro del elemento con la clase "texto" dentro de ".reservaciones-izquierda" */
+  line-height: 3; /* Altura de línea 3 veces el tamaño de la fuente */
+}
+
+.reservaciones-izquierda,
+.reservaciones-derecha {
+  padding: 40px 20px 30px; /* Relleno de 40px arriba, 20px izquierda y derecha, 30px abajo */
+}
+
+.reservaciones-derecha {
+  background-repeat: repeat; /* Fondo repetido en la dirección especificada */
+  background-position: top left; /* Posición del fondo en la esquina superior izquierda */
+}
+
+.reservaciones-izquierda-h2 {
+  color: #0addaf; /* Color del texto del elemento h2 con la clase "reservaciones-izquierda-h2" */
+}
+.reservaciones-izquierda-telefono{
+  color: purple;
+}
+
+
+
 
 /* -------------------------------------------------------------------------------------------- Extras ------------------- */
 
@@ -355,3 +391,4 @@ text-align: left;
 }
 
 
+/* PRUEBAS*/
