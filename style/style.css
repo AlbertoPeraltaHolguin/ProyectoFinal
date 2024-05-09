@@ -252,86 +252,18 @@
 }
 
 /* -------------------------------------------------------------------------------------------- Reservaciones ------------------- */
-.reservaciones-contenedor{
-  position: absolute;
-  background-color: black;
+
+.background-res{
   width: 100%;
   height: 100%;
-}
-
-.form{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  background-color: rgba(192, 24, 24, 0.7);
-  border-radius: 10px;
-}
-
-.center{
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  background-color: #000000;
   text-align: center;
+  padding: 45px;
 }
 
-.style-reservaciones{
-  font-size: 20px;
-}
-
-.inputs-config{
-  justify-content: center;
-  width: 100%;
-}
-
-.inputs-config-part1{
-  color: #000000;
-}
-
-.button-config{
-  display: flex;
-  justify-content: center;
-  color: #000000;
-}
-
-.folio-txt-red{
-  color: #be3144;
-}
-
-.folio-txt-black{
-  color: #000000;
-}
-/* Especificaciones para la font del titulo, con mayor padding al ser la primera y, por consiguiente,  tener el nav */
-.reservaciones-titulos{
-    text-align: center;
-    font-size: 50px;
-    color: #000000;
-}
-
-/* El resto de titulos reutilizan el css "sp-tit" de especialidades */
-.txt-reservaciones{
-    text-align: center;
-    font-size: 30px;
-    color: #000000;
-    padding: 15px;
-}
-
-/* Especificaciones en los input para crear reservaciones */
-.tamaño-input-reservaciones{
-    width: 400px;
-    height: 50px;
-    margin: 10px;
-}
-
-.contenedor-input-reservaciones{
-    text-align: center;
-    margin: 30px;
-    padding: 15px;
-    width: 300px;
-    background-color: #be3144;
-    text-align: center;
-    cursor: pointer;
+.division{
+  background-color: red;
+  padding: 15px 0 15px 0;
 }
 
 /* -------------------------------------------------------------------------------------------- Extras ------------------- */
